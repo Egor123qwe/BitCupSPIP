@@ -1,0 +1,133 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.app-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* начало header */
+.header-wrapper {
+  margin-left: 60px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  min-height: 100px;
+}
+
+.header-icon {
+  margin-right: 10%;
+}
+.header-img {
+  width: 135px;
+}
+
+/* вот эта хуйня ебёт всю вёрстку*/
+/*
+.header-menu {
+  display: flex;
+  margin-right: 3%;
+}
+*/
+
+
+.header-menu-btn {
+  background: none;
+  border: none;
+  color: #2DAF58;
+  font-family: 'Chava';
+  white-space: nowrap;
+}
+
+.header-reg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-reg-btn {
+  background: none;
+  border: none;
+  color: #2DAF58;
+  font-family: 'Chava';
+  white-space: nowrap;
+  padding-right: 60px;
+}
+/* конец header */
+
+
+/* начало секции 1 */
+.main_info {
+  margin-top: 20px;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.text-info {
+  flex-basis: 59%;
+  margin-right: 15%;
+  max-width: 650px;
+}
+
+.main_info-img {
+  height: 450px;
+  display: block;
+}
+
+.main_info-header {
+  color: #2DAF58;
+  font-size: 36px;
+  font-family: 'Chava';
+}
+.main_info-content {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 16px;
+  padding-bottom: 4%;
+}
+
+.main_info-btn {
+  padding: 10px;
+  background: none;
+  font-family: 'Chava';
+  border: none;
+  color: #2DAF58;
+  border: 1px solid #2DAF58;
+}
+/* конец секции 1 */
+
+
+/* начало секции 2 */
+.about_olimpiad {
+  margin-top: 160px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.about-header {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 40px;
+}
+.about-content {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 13px;
+}
+/* конец секции 2 */
+
+
+/* начало секции 3 */
+/* конец секции 3 */
