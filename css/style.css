@@ -130,4 +130,118 @@ body {
 
 
 /* начало секции 3 */
+.directions-header-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2DAF58;
+  margin-top: 60px;
+}
+.directions-header-border {
+  margin-left: 60px;
+  background-color: red;
+}
+.directions-label {
+  font-size: 32px;
+  font-family: 'Chava';
+  width: 35%;
+}
+.directions-comments {
+  color: #0F351B;
+  background-color: black;
+  font-family: 'Chava';
+  right: 0;
+  width: 65%;
+  border: 2px solid black;
+  font-size: 12px;
+}
+.directions {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+.directions-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.directions-border {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.directions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* конец секции 3 */
+
+
+
+/* начало секции 4 */
+.stages {
+  color: #2DAF58;
+  margin-left: 60px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.stages-info {
+  width: 50%;
+}
+.stages-header {
+  margin-top: 40px;
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 40px;
+}
+.sec_stage-header {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 35px;
+}
+.sec_stage-content {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 17px;
+}
+.background-img {
+  background-image: url(./../img/assets/numbers.svg);
+  width: 50%;
+}
+.stages-btn {
+  padding: 14px;
+  background: none;
+  font-size: 17px;
+  font-family: 'Chava';
+  border: none;
+  color: #2DAF58;
+  border: 1px solid #2DAF58;
+  margin-bottom: 30px;
+}
+.sec_stage {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.third_stage {
+  margin-bottom: 30px;
+}
+.footer {
+  display: flex;
+}
+.footer-data {
+  color: #2DAF58;
+  font-family: 'Chava';
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.fksis-links {
+  color: #2DAF58;
+  font-family: 'Chava';
+  margin-right: 10px;
+  white-space: nowrap;
+}
+/* конец секции 4 */
