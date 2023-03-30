@@ -106,6 +106,7 @@ body {
   border: none;
   color: #2DAF58;
   border: 1px solid #2DAF58;
+  transition: all ease 0.5s;
 }
 /* конец секции 1 */
 
@@ -130,37 +131,38 @@ body {
 
 
 /* начало секции 3 */
-.directions-header-wrapper {
-  position: relative;
+.directions-header {
   width: 100%;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2DAF58;
-  margin-top: 60px;
 }
-.directions-header-border {
+.directions-header-wrapper {
+  display: flex;
   margin-left: 60px;
-  background-color: red;
+  margin-right: 60px;
 }
 .directions-label {
   font-size: 32px;
   font-family: 'Chava';
   width: 35%;
+  white-space: nowrap;
+  margin-top: 20px;
 }
 .directions-comments {
   color: #0F351B;
   background-color: black;
   font-family: 'Chava';
   right: 0;
-  width: 65%;
+  width: 55%;
   border: 2px solid black;
   font-size: 12px;
 }
 .directions {
   margin: 0;
   padding: 0;
-  background-color: red;
+  background-color: #2DAF58;
+  width: 100%;
 }
 .directions-wrapper {
   position: relative;
@@ -170,6 +172,7 @@ body {
   margin-right: auto;
 }
 .directions-border {
+  width: 90%;
   margin-left: 60px;
   margin-right: 60px;
 }
@@ -177,6 +180,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.directions-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  padding: -5px;
+}
+ td {
+  padding: 20px; /* Поля вокруг содержимого таблицы */
+  border: 1px solid black; /* Параметры рамки */
+ }
+ td:nth-child {
+  padding: 20px; /* Поля вокруг содержимого таблицы */
+  border-bottom: none; /* Параметры рамки */
+ }
+.compony-logo1 {
+  height: 35px;
+}
+.compony-logo2 {
+  height: 80px;
+}
+.direction-header {
+  margin-top: 10px;
+  font-family: 'Chava';
+  font-size: 13px;
+}
+.direction-info {
+  margin-top: 5px;
+  font-family: 'Chava';
+  font-size: 18px;
 }
 /* конец секции 3 */
 
@@ -221,6 +253,7 @@ body {
   color: #2DAF58;
   border: 1px solid #2DAF58;
   margin-bottom: 30px;
+  transition: all ease 0.5s;
 }
 .sec_stage {
   margin-top: 30px;
@@ -245,3 +278,25 @@ body {
   white-space: nowrap;
 }
 /* конец секции 4 */
+.reg_btn_hover {
+  background: #2DAF58;
+  border: none;
+  color: black;
+  font-family: 'Chava';
+  white-space: nowrap;
+}
+
+/* анимации */
+.main_info-btn:hover {
+  background: #2DAF58;
+  color: black;
+  transition: 0.7s;
+}
+.stages-btn:hover {
+  background: #2DAF58;
+  color: black;
+  transition: 0.7s;
+}
+/* анимации */
+
+
