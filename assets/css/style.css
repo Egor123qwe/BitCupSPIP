@@ -1,3 +1,18 @@
+/*global variables*/
+:root {
+  --main-green: #2DAF58;
+  --dark-green: #0F351B;
+
+}
+
+:root { 
+  --small: 13px;
+  --medium: 17px;
+  --large: 38px;
+  --Biggest: 56px;
+}
+
+
 /*global classes*/
 .d-flex { display: flex; }
 
@@ -36,7 +51,7 @@ body {
 .header-menu-btn {
   background: none;
   border: none;
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
   white-space: nowrap;
 }
@@ -45,7 +60,7 @@ body {
   margin-left: auto;
   background: none;
   border: none;
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
   white-space: nowrap;
 }
@@ -74,14 +89,14 @@ body {
 }
 
 .main_info-header {
-  color: #2DAF58;
-  font-size: 36px;
+  color: var(--main-green);
+  font-size: var(--large);
   font-family: 'Chava';
 }
 .main_info-content {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
-  font-size: 16px;
+  font-size: var(--medium);
   margin-bottom: 35px;
 }
 
@@ -90,8 +105,8 @@ body {
   background: none;
   font-family: 'Chava';
   border: none;
-  color: #2DAF58;
-  border: 1px solid #2DAF58;
+  color: var(--main-green);
+  border: 1px solid var(--main-green);
   transition: all ease 0.5s;
 }
 /* конец секции 1 */
@@ -102,21 +117,21 @@ body {
   margin-top: 140px;
 }
 .about-header {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
-  font-size: 40px;
+  font-size: var(--large);
 }
 .about-content {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
-  font-size: 13px;
+  font-size: var(--small);
 }
 /* конец секции 2 */
 
 
 /* начало секции 3 */
 .directions {
-  background-color: #2DAF58;
+  background-color: var(--main-green);
   margin-top: 30px;
 }
 
@@ -132,14 +147,14 @@ body {
   padding-right: 30px;
   height: 100%;
   width: 50%;
-  background-color: #2DAF58;
+  background-color: var(--main-green);
 }
 .header_label_text {
   font-family: 'Chava';
-  font-size: 56px;
+  font-size: var(--Biggest);;
 }
 .header-comments {
-  color: #0F351B;
+  color: var(--dark-green);
   font-family: 'Chava';
   height: 100%;
   width: 50%;
@@ -165,12 +180,12 @@ body {
 }
 .direction-header {
   font-family: 'Chava';
-  font-size: 13px;
+  font-size: var(--small);
 }
 .direction-info {
   margin-top: 5px;
   font-family: 'Chava';
-  font-size: 18px;
+  font-size: var(--medium);
 }
 .directions-item {
   padding: 15px;
@@ -187,9 +202,9 @@ body {
   margin-bottom: 40px;
 }
 .stages-conteiner {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
-  font-size: 17px;
+  font-size: var(--medium);
   margin-bottom: 30px;
 }
 .stages-content {
@@ -201,14 +216,14 @@ body {
 }
 
 .stages-header {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
-  font-size: 40px;
+  font-size: var(--large);
 }
 .sec_stage-header {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
-  font-size: 35px;
+  font-size: var(--large);
 }
 
 footer {
@@ -216,13 +231,13 @@ footer {
   margin-top: 30px;
 }
 .footer-data {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
   margin-right: 30px;
   white-space: nowrap;
 }
 .footer-links {
-  color: #2DAF58;
+  color: var(--main-green);
   font-family: 'Chava';
   margin-right: 10px;
   white-space: nowrap;
@@ -233,7 +248,7 @@ footer {
 
 /* анимации */
 .reg-btn:hover {
-  background: #2DAF58;
+  background: var(--main-green);
   color: black;
   transition: 0.7s;
 }
