@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA -Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIT-CUP</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="app-wrapper">
-        <div class="header-wrapper">
-            <header class="header">
+
+    <header class="header">
+        <div class="section-container">
+            <div class="header-box">
                 <div class="header-icon">
-                    <img class="header-img" src="/img/assets/logo.svg">
+                    <img class="header-img" src="assets/img/logo.svg">
                 </div>
                 <div class="header-menu">
                     <a href="#"><button class="header-menu-btn">ОБ ОЛИМПИАДЕ</button></a>
@@ -21,125 +22,145 @@
                     <a href="#"><button class="header-menu-btn">РАСПИСАНИЕ</button></a>
                     <a href="#"><button class="header-menu-btn">ЗАЛ СЛАВЫ</button></a>
                 </div>
-                <div class="header-reg">
-                    <button class="header-reg-btn">регистрация</button>
-                </div>
-            </header>
+                <a href="#"><button class="header-reg-btn">регистрация</button></a>
+            </div>
         </div>
+    </header>
+
+    <main>
+    
         <section class="main_info">
-            <div class="text-info">
-                <h1 class="main_info-header">
-                    Студенческая олимпиада в сфере информацинных технологий
-                </h1>
-                <div class="main_info-content">
-                    На базе факультета компьютерных систем и сетей белорусского 
-                    государственного университета информатики и радиоэлектроники
+            <div class="section-container">
+                <div class="d-flex">
+
+                    <div class="text-info">
+                        <h1 class="main_info-header">
+                            Студенческая олимпиада в сфере информационных технологий
+                        </h1>
+                        <div class="main_info-content">
+                            <p>На базе факультета компьютерных систем и сетей белорусского 
+                            государственного университета информатики и радиоэлектроники</p>
+                        </div>
+                        <div class="main_info-reg">
+                            <a href="#"><button class="reg-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
+                        </div>
+                    </div>
+                    
+                    <div class="main_info-icon">
+                        <img class="main_info-img" src="assets/img/cup.svg">
+                    </div>
+
                 </div>
-                <div class="main_info-reg">
-                    <a href="#"><button class="main_info-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
-                </div>
-            </div>
-            <div class="main_info-icon">
-                <img class="main_info-img" src="/img/assets/cup.svg">
             </div>
         </section>
-
+        
         <section class="about_olimpiad">
-            <h1 class="about-header">ОБ ОЛИМПИАДЕ</h1>
-            <div class="about-content">
-                Олимпиада BIT-Cup – это соревнования, направленные на выявление и поддержку талантливых студентов, которые обучаются наиболее востребованным на рынке информационным технологиям.<br/><br/>
-                В олимпиаде принимают участие сильнейшие студенты со всей Республики Беларусь.<br/><br/>
-                Организаторами олимпиады являются Министерство образования Республики Беларусь и Белорусский государственный университет информатики и радиоэлектроники.<br/><br/>
-                Олимпиада состоит из конкурсов на знание современных информационных технологий. Конкурсные задания разрабатываются партнёрами олимпиады – ведущими IT-компаниями.<br/><br/>
-                Отличительной чертой соревнований является их практическая ориентированность, что позволяет и самим студентам, и их преподавателям оценить уровень не только теоретических знаний, но и практической подготовки.<br/><br/>
+            <div class="section-container">
+                <h1 class="about-header">ОБ ОЛИМПИАДЕ</h1>
+                <div class="about-content">
+                    <p>Олимпиада BIT-Cup – это соревнования, направленные на выявление и поддержку талантливых студентов, которые обучаются наиболее востребованным на рынке информационным технологиям.</p>
+                    <p>В олимпиаде принимают участие сильнейшие студенты со всей Республики Беларусь.<br/>
+                    <p>Организаторами олимпиады являются Министерство образования Республики Беларусь и Белорусский государственный университет информатики и радиоэлектроники.</p>
+                    <p>Олимпиада состоит из конкурсов на знание современных информационных технологий. Конкурсные задания разрабатываются партнёрами олимпиады – ведущими IT-компаниями.</p>
+                    <p>Отличительной чертой соревнований является их практическая ориентированность, что позволяет и самим студентам, и их преподавателям оценить уровень не только теоретических знаний, но и практической подготовки.</p>
+                </div>
             </div>
         </section>
-    </div>
-    <div class="directions-header">
-        <div class="directions-header-wrapper">
-            <div class="directions-label">7 НАПРАВЛЕНИЙ</div>
-            <div class="directions-comments">
-                // Задания для олимпиады готовятся<br/> 
-                // спонсорами соревнований - ведущими<br/> 
-                // it-компаниями<br/>
-            </div>
-        </div>
-    </div>
-    <section class="directions">
-        <div class="directions-wrapper">
-            <table class="directions-border">
-                <tr class="directions-table">
-                    <td class="directions-item">
-                        <img class="compony-logo1" src="/img/assets/itechart.svg">
-                        <div class="direction-header">Направление:</div>
-                        <div class="direction-info">Mobile App Development для iOS и Android</div>
-                    </td>
-                    <td class="directions-item">
-                            <img class="compony-logo1" src="/img/assets/intexsoft.svg">
-                            <div class="direction-header">Направление:</div>
-                            <div class="direction-info">Разработка веб-приложений на PHP</div>
-                    </td>
-                    <td class="directions-item">
-                            <img class="compony-logo1" src="/img/assets/tinkoff.svg">
-                            <div class="direction-header">Направление:</div>
-                            <div class="direction-info">java разработка</div>
-                    </td>
-                    <td class="directions-item">
-                            <img class="compony-logo2" src="/img/assets/iba-group.svg">
-                            <div class="direction-header">Направление:</div>
-                            <div class="direction-info">Data Science</div>
-                    </td>
-                    <td class="directions-item">
-                            <img class="compony-logo2" src="/img/assets/leverXGroup.svg">
-                            <div class="direction-header">Направление:</div>
-                            <div class="direction-info">Web Development</div>
-                    </td>
-                    <td class="directions-item">
-                            <img class="compony-logo2" src="/img/assets/epam.svg">
-                            <div class="direction-header">Направление:</div>
-                            <div class="direction-info">Software Automation Testing</div>
-                    </td>
-                    <td class="directions-item">
-                            <img class="compony-logo2" src="/img/assets/qulix.svg">
-                            <div class="direction-header">Направление:</div>
-                            <div class="direction-info">Data Science</div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
 
-    <div class="app-wrapper">
-        <section class="stages">
-            <div class="stages-info">
-                <div class="stages-header">ЭТАПЫ</div>
-                <div class="sec_stage">
-                    <div class="sec_stage-header">ОТБОРОЧНЫЙ</div>
-                    <div class="sec_stage-content">
-                        <li>в дистанционной форме</li>
-                        27 ноября - 3 декабря
+
+        <section class="directions">
+            <div class="directions-header">
+                <div class="header-label">
+                    <h1 class="header_label_text">7 НАПРАВЛЕНИЙ</h1>
+                </div>
+                <div class="header-comments">
+                    <div class="comments-box">
+                        <p class="comment-item">// Задания для олимпиады готовятся</p>
+                        <p class="comment-item">// спонсорами соревнований - ведущими</p> 
+                        <p class="comment-item">// it-компаниями</p>
                     </div>
                 </div>
-                <div class="third_stage">
-                    <div class="sec_stage-header">ФИНАЛ</div>
-                    <div class="sec_stage-content">
-                        <li>Очно, на базе бгуир</li>
-                        15 декабря
-                    </div>
-                </div>
-                <div class="stages-reg">
-                    <a href="#"><button class="stages-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
-                </div>
-                <footer class="footer">
-                    <div class="footer-data">2014-3033</div>
-                    <a href="#" class="fksis-links">ФКСИС</a>
-                    <a href="#"  class="fksis-links">БГУИР</a>
-                    <a href="#" class="fksis-links">ГРУППА ВКОНТАКТЕ</a>
-                    <a href="#" class="fksis-links">E-MAIL</a>
-                </footer>
             </div>
-            <div class="background-img"></div>
+
+            <div class="section-container">
+                <div class="directions-table">
+                    <div class="directions-item">
+                        <img class="compony-logo1" src="assets/img/itechart.svg">
+                        <div class="direction-header"><p>Направление:</p></div>
+                        <div class="direction-info"><p>Mobile App Development для iOS и Android</p></div>
+                    </div>
+                    <div class="directions-item">
+                            <img class="compony-logo1" src="assets/img/intexsoft.svg">
+                            <div class="direction-header"><p>Направление:</p></div>
+                            <div class="direction-info"><p>Разработка веб-приложений на PHP</p></div>
+                    </div>
+                    <div class="directions-item">
+                            <img class="compony-logo1" src="assets/img/tinkoff.svg">
+                            <div class="direction-header"><p>Направление:</p></div>
+                            <div class="direction-info"><p>java разработка</p></div>
+                    </div>
+                    <div class="directions-item">
+                            <img class="compony-logo2" src="assets/img/iba-group.svg">
+                            <div class="direction-header"><p>Направление:</p></div>
+                            <div class="direction-info"><p>Data Science</p></div>
+                    </div>
+                    <div class="directions-item">
+                            <img class="compony-logo2" src="assets/img/leverXGroup.svg">
+                            <div class="direction-header"><p>Направление:</p></div>
+                            <div class="direction-info"><p>Web Development</p></div>
+                    </div>
+                    <div class="directions-item">
+                            <img class="compony-logo2" src="assets/img/epam.svg">
+                            <div class="direction-header"><p>Направление:</p></div>
+                            <div class="direction-info"><p>Software Automation Testing</p></div>
+                    </div>
+                    <div class="directions-item">
+                            <img class="compony-logo2" src="assets/img/qulix.svg">
+                            <div class="direction-header"><p>Направление:</p></div>
+                            <div class="direction-info"><p>Data Science</p></div>
+                    </div>
+
+                </div>
+            </div>
         </section>
-    </div>  
+
+
+
+
+
+
+        <section class="stages">
+            <div class="section-container">
+                <div class="d-flex">
+                    <div class="stages-content">
+                        <h1 class="stages-header">ЭТАПЫ</h1>
+                        <div class="stages-conteiner">
+                            <span class="sec_stage-header">ОТБОРОЧНЫЙ</span>
+                            <li>в дистанционной форме</li>
+                            <span>27 ноября - 3 декабря</span>
+                        </div>
+                        <div class="stages-conteiner">
+                            <span class="sec_stage-header">ФИНАЛ</span>
+                            <li>Очно, на базе бгуир</li>
+                            <span>15 декабря</span>
+                        </div>
+
+                        <a href="#"><button class="reg-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button></a>
+                        <footer>
+                            <div class="footer-data"><p>2014-3033</p></div>
+                            <a href="#" class="footer-links"><p>ФКСИС</p></a>
+                            <a href="#"  class="footer-links"><p>БГУИР</p></a>
+                            <a href="#" class="footer-links"><p>ГРУППА ВКОНТАКТЕ</p></a>
+                            <a href="#" class="footer-links"><p>E-MAIL</p></a>
+                        </footer>
+                    </div>
+                    <div class="background-img"></div>
+                </div>
+            </div>
+        </section>
+    
+    
+    </main>
+
 </body>
 </html>

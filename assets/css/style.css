@@ -1,0 +1,242 @@
+/*global classes*/
+.d-flex { display: flex; }
+
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.section-container {
+  position: relative;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* начало header */
+
+.header {
+  margin-top: 40px;
+}
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-icon {
+  margin-right: 120px;
+}
+.header-img {
+  width: 135px;
+}
+
+.header-menu-btn {
+  background: none;
+  border: none;
+  color: #2DAF58;
+  font-family: 'Chava';
+  white-space: nowrap;
+}
+
+.header-reg-btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #2DAF58;
+  font-family: 'Chava';
+  white-space: nowrap;
+}
+/* конец header */
+
+
+/* начало секции 1 */
+.main_info {
+  margin-top: 100px;
+}
+
+.text-info {
+  width: 65%;
+}
+
+.main_info-icon {
+  display: flex;
+  justify-content: right; 
+  width: 35%;
+}
+
+.main_info-img {
+  margin-right: 30px;
+  height: 450px;
+  display: block;
+}
+
+.main_info-header {
+  color: #2DAF58;
+  font-size: 36px;
+  font-family: 'Chava';
+}
+.main_info-content {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.reg-btn {
+  padding: 10px;
+  background: none;
+  font-family: 'Chava';
+  border: none;
+  color: #2DAF58;
+  border: 1px solid #2DAF58;
+  transition: all ease 0.5s;
+}
+/* конец секции 1 */
+
+
+/* начало секции 2 */
+.about_olimpiad {
+  margin-top: 140px;
+}
+.about-header {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 40px;
+}
+.about-content {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 13px;
+}
+/* конец секции 2 */
+
+
+/* начало секции 3 */
+.directions {
+  background-color: #2DAF58;
+  margin-top: 30px;
+}
+
+.directions-header {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  height: 100px;
+  display: flex;
+}
+.header-label {
+  text-align: right;
+  padding-right: 30px;
+  height: 100%;
+  width: 50%;
+  background-color: #2DAF58;
+}
+.header_label_text {
+  font-family: 'Chava';
+  font-size: 56px;
+}
+.header-comments {
+  color: #0F351B;
+  font-family: 'Chava';
+  height: 100%;
+  width: 50%;
+  background-color: black;
+}
+.comment-item {
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+
+
+
+.directions-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  padding: 10px;
+}
+.compony-logo1 {
+  height: 35px;
+}
+.compony-logo2 {
+  height: 80px;
+}
+.direction-header {
+  font-family: 'Chava';
+  font-size: 13px;
+}
+.direction-info {
+  margin-top: 5px;
+  font-family: 'Chava';
+  font-size: 18px;
+}
+.directions-item {
+  padding: 15px;
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+}
+/* конец секции 3 */
+
+
+
+/* начало секции 4 */
+.stages {
+  margin-bottom: 40px;
+}
+.stages-conteiner {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.stages-content {
+  width: 50%;
+}
+.background-img {
+  background-image: url(../img/numbers.svg);
+  width: 50%;
+}
+
+.stages-header {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 40px;
+}
+.sec_stage-header {
+  color: #2DAF58;
+  font-family: 'Chava';
+  font-size: 35px;
+}
+
+footer {
+  display: flex;
+  margin-top: 30px;
+}
+.footer-data {
+  color: #2DAF58;
+  font-family: 'Chava';
+  margin-right: 30px;
+  white-space: nowrap;
+}
+.footer-links {
+  color: #2DAF58;
+  font-family: 'Chava';
+  margin-right: 10px;
+  white-space: nowrap;
+}
+/* конец секции 4 */
+
+
+
+/* анимации */
+.reg-btn:hover {
+  background: #2DAF58;
+  color: black;
+  transition: 0.7s;
+}
+/* анимации */
+
+
