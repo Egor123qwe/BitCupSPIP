@@ -48,24 +48,27 @@ body {
 /* начало header */
 
 .header {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .burger-button {
+  transition-duration: .3s;
+  color: var(--main-green);
+  z-index: 11;
   position: relative;
   display: none;
   width: 35px;
   height: 17.5px;
-  border-top: 5px solid var(--main-green);
-  border-bottom: 5px solid var(--main-green);
+  border-top: 5px solid;
+  border-bottom: 5px solid;
 }
 .burger-button:before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 6.5px;
   left: 0px;
   width: 100%;
-  border-top: 5px solid var(--main-green);
+  border-top: 5px solid;
 }
 
 
@@ -277,7 +280,7 @@ footer {
 }
 /* анимации */
 
-@media (min-width: 900px) and (max-width: 1200px){
+@media  (max-width: 1200px){
   :root { 
     --small: 14px;
     --medium: 13px;
@@ -297,7 +300,7 @@ footer {
   }
 }
 
-@media (min-width: 600px) and (max-width: 900px){
+@media (max-width: 900px){
   :root { 
     --small: 8px;
     --medium: 12px;
@@ -363,6 +366,106 @@ footer {
   }
   .background-img {
     width: 30%;
+  }
+}
+@media (max-width: 600px) {
+  :root { 
+    --small: 8px;
+    --medium: 10px;
+    --medium_2: 10px;
+
+    --large: 20px;
+    --Large_2: 26px; 
+
+    --Biggest: 32px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px; 
+  }
+
+  .header-menu {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    padding-top: 80px;
+    background-color: var(--main-green);
+    top: 0;
+    transition-duration: .3s;
+    left: -100vw;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important
+  }
+  .header-menu-btn {
+    font-size: var(--large);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: black;
+  }
+  .showen {
+    left: 0;
+    transition: .3s;
+  }
+  .hidden {
+    left: -100vw;
+    transition: .3s;
+  }
+  .black {
+    transition: .3s;
+    color: black;
+  }
+  
+  .text-info {
+    width: 100%;
+  }
+  .reg-btn {
+    padding: 10px;
+  }
+  .stages-header {
+    margin-bottom: 10px;
+  }
+  .sec_stage-text {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .stages-conteiner {
+    font-size: calc(var(--large)/1.2);
+  }
+  .directions-header {
+    display: none;
+  }
+
+  .directions-item {
+    border: 1px solid black;
+    border-right: none;
+    border-top: none;
+    padding: 10px 5px 5px 5px;
+  }
+  .direction-header {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: var(--small);
+  }
+  .compony-logo1 {
+    height: 15px;
+  }
+  .compony-logo2 {
+    height: 25px;
+  }
+
+  .background-img {
+    display: none;
+  }
+  .stages-reg-btn {
+    margin-top: 45px;
+  }
+
+  footer {
+    display: none;
   }
 }
 

@@ -1,5 +1,5 @@
-const backgroundImg = document.getElementsByClassName('background-img')[0];
-const stages = document.getElementById('stages');
+const backgroundImg = document.querySelector('.background-img');
+const stages = document.querySelector('.stages');
 const footer = document.getElementsByTagName('footer')[0];
 
 function resize() {
