@@ -50,6 +50,25 @@ body {
 .header {
   margin-top: 40px;
 }
+
+.burger-button {
+  position: relative;
+  display: none;
+  width: 35px;
+  height: 17.5px;
+  border-top: 5px solid var(--main-green);
+  border-bottom: 5px solid var(--main-green);
+}
+.burger-button:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  width: 100%;
+  border-top: 5px solid var(--main-green);
+}
+
+
 .header-box {
   display: flex;
   align-items: center;
@@ -289,12 +308,19 @@ footer {
 
     --Biggest: 40px;
   }
+
   .container {
     padding-left: 40px;
     padding-right: 40px; 
   }
+  .burger-button {
+    display: block;
+  }
   .header-img {
     width: 80px;
+  }
+  .header-menu {
+    display: none;
   }
 
   .about-content {
