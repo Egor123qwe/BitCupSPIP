@@ -14,4 +14,5 @@ burgerButton.addEventListener("click", function() {
     } 
  
     isNavBarShowed = !isNavBarShowed; 
+    console.log(isNavBarShowed)
 });
