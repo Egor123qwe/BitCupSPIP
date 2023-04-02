@@ -5,12 +5,15 @@
 }
 
 :root { 
-  --small: 13px;
-  --medium: 17px;
-  --large: 38px;
-  --Biggest: 56px;
-}
+  --small: 14px;
+  --medium: 18px;
+  --medium_2: 24px;
 
+  --large: 42px;
+  --Large_2: 48px; 
+
+  --Biggest: 64px;
+}
 
 /*global classes*/
 .d-flex { 
@@ -38,8 +41,8 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 /* начало header */
@@ -75,7 +78,8 @@ body {
 
 /* начало секции 1 */
 .main_info {
-  margin-top: 100px;
+  margin-top: 60px;
+  margin-bottom: 200px;
 }
 
 .text-info {
@@ -96,14 +100,15 @@ body {
 
 .main_info-header {
   font-size: var(--large);
+  margin-bottom: 10px;
 }
 .main_info-content {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .reg-btn {
   color: var(--main-green);
-  font-size: calc(var(--medium) * 1.4);
+  font-size: var(--medium_2);
   padding: 15px;
   text-decoration: none;
   border: 1px solid var(--main-green);
@@ -114,13 +119,14 @@ body {
 
 /* начало секции 2 */
 .about_olimpiad {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .about-header {
-  font-size: var(--large);
+  font-size: var(--Biggest);
+  margin-bottom: 15px;
 }
 .about-content {
-  font-size: var(--small);
+  font-size: var(--medium);
 }
 /* конец секции 2 */
 
@@ -151,7 +157,8 @@ body {
   background-color: var(--main-green);
 }
 .header_label_text {
-  font-size: var(--Biggest);;
+  font-size: var(--Biggest);
+  margin-top: 40px;
 }
 .header-comments {
   height: 100%;
@@ -174,13 +181,14 @@ body {
 }
 .direction-header {
   margin: 15px 0 5px 0;
-  font-size: var(--small);
+  font-size: var(--medium);
 }
 .directions-item {
   padding: 15px;
   border: 1px solid black;
   border-top: none;
   border-left: none;
+  font-size: var(--medium_2);
 }
 .directions-item:nth-child(7) { border-bottom: none; }
 .directions-item:nth-child(3n) { border-right: none; }
@@ -214,17 +222,21 @@ body {
   content: "▪";
 }
 .stages-header {
-  font-size: calc((var(--large)  * 1.8));
+  font-size: var(--Biggest);
   margin-bottom: 50px;
 }
 .sec_stage-header {
   line-height: 58px;
-  font-size: calc((var(--large) * 1.3));
+  font-size: var(--Large_2);
+}
+.stages-reg-btn {
+  margin-top: 70px;
 }
 /* конец секции 4 */
 
 /* footer */
 footer {
+  margin-top: 80px;
   padding-bottom: 50px;
 }
 .footer-data {
@@ -246,4 +258,85 @@ footer {
 }
 /* анимации */
 
+@media (min-width: 900px) and (max-width: 1200px){
+  :root { 
+    --small: 14px;
+    --medium: 13px;
+    --medium_2: 16px;
+
+    --large: 32px;
+    --Large_2: 38px; 
+
+    --Biggest: 42px;
+  }
+  .header-img {
+    width: 100px;
+  }
+  .container {
+    padding-left: 60px;
+    padding-right: 60px; 
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+  :root { 
+    --small: 8px;
+    --medium: 12px;
+    --medium_2: 12px;
+
+    --large: 28px;
+    --Large_2: 34px; 
+
+    --Biggest: 40px;
+  }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px; 
+  }
+  .header-img {
+    width: 80px;
+  }
+
+  .about-content {
+    font-size: var(--medium_2);
+  }
+
+  .main_info {
+    margin-bottom: 100px;
+  }
+  .main_info-icon {
+    display: none;
+  }
+  .text-info {
+    width: 90%;
+  }
+  
+  .directions-table {
+    grid-template-columns: 1fr 1fr;
+    padding: 8px;
+  }
+  .directions-item {
+    border: 1px solid black;
+    border-right: none;
+    border-top: none;
+  }
+  .compony-logo1 {
+    height: 30px;
+  }
+  .compony-logo2 {
+    height: 55px;
+  }
+  .directions-item:nth-child(7) { 
+    border-bottom: none; 
+    border-right: 1px solid black; 
+  }
+  .directions-item:nth-child(2n - 1) { border-left: none; }
+
+  .stages-conteiner {
+    margin-bottom: 20px;
+  }
+  .background-img {
+    width: 30%;
+  }
+}
 

@@ -3,7 +3,7 @@ const stages = document.getElementById('stages');
 const footer = document.getElementsByTagName('footer')[0];
 
 function resize() {
-    backgroundImg.style.height = stages.offsetHeight + footer.offsetHeight + 40 + 'px';
+    backgroundImg.style.height = stages.offsetHeight + footer.offsetHeight + 90 + 'px';
 }
 
 resize();
