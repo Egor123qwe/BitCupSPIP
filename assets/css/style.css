@@ -13,6 +13,8 @@
   --Large_2: 48px; 
 
   --Biggest: 64px;
+
+  --containerPadding: 120px;
 }
 
 /*global classes*/
@@ -41,8 +43,8 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: var(--containerPadding);
+  padding-right: var(--containerPadding);
 }
 
 /* начало header */
@@ -167,20 +169,29 @@ body {
   position: relative;
   margin-top: 20px;
   padding-bottom: 30px;
-  height: 100px;
+  height: 90px;
   display: flex;
 }
 .header-label {
   color: black;
   text-align: right;
-  padding-right: 30px;
+  padding-left: 0;
   height: 100%;
   width: 50%;
   background-color: var(--main-green);
 }
+.header_label-container {
+  margin-left: auto;
+  padding-right: 20px;
+  display: block;
+  right: 0;
+  width: calc(100% - var(--containerPadding));
+  max-width: 700px;
+}
 .header_label_text {
-  font-size: var(--Biggest);
-  margin-top: 40px;
+  white-space: nowrap;
+  font-size: var(--large);
+  margin-top: 30px;
 }
 .header-comments {
   height: 100%;
@@ -290,13 +301,16 @@ footer {
     --Large_2: 38px; 
 
     --Biggest: 42px;
+    --containerPadding: 60px;
   }
   .header-img {
     width: 100px;
   }
-  .container {
-    padding-left: 60px;
-    padding-right: 60px; 
+  .header_label_text {
+    margin-top: 20px;
+  }
+  .directions-header { 
+    height: 70px;
   }
 }
 
@@ -310,11 +324,7 @@ footer {
     --Large_2: 34px; 
 
     --Biggest: 40px;
-  }
-
-  .container {
-    padding-left: 40px;
-    padding-right: 40px; 
+    --containerPadding: 40px;
   }
   .burger-button {
     display: block;
@@ -330,6 +340,9 @@ footer {
     font-size: var(--medium_2);
   }
 
+  .directions-header { 
+    height: 60px;
+  }
   .main_info {
     margin-bottom: 100px;
   }
@@ -378,10 +391,17 @@ footer {
     --Large_2: 26px; 
 
     --Biggest: 32px;
+    --containerPadding: 20px;
   }
-  .container {
-    padding-left: 20px;
-    padding-right: 20px; 
+  .directions-header { 
+    height: 45px;
+  }
+  .header-comments {
+    padding-top: 5px;
+    font-size: 7px;
+  }
+  .low_margin{
+    padding-bottom: 3px;
   }
 
   .header-menu {
@@ -434,9 +454,6 @@ footer {
 
   .stages-conteiner {
     font-size: calc(var(--large)/1.2);
-  }
-  .directions-header {
-    display: none;
   }
 
   .directions-item {
