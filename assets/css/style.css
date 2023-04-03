@@ -267,6 +267,52 @@ body {
 }
 /* конец секции 4 */
 
+/* страница 2 */
+.qulix-body {
+  position: fixed;
+}
+.qulix-container {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+.compony-content a {
+  color: var(--main-green);
+  text-decoration: none;
+}
+.compony-content a::before {
+  color: var(--main-green);
+}
+.qulix-list p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.qulix-list p::before {
+  margin-right: 4px;
+  font-size: 10px;
+  padding-bottom: 2px;
+  content: "●";
+}
+.compony-header-lable {
+  width: 150px;
+}
+.header-text {
+  font-size: calc(var(--medium)*1.2);
+}
+.about-olimpiad-content {
+  font-size: calc(var(--medium)*0.8);
+}
+.compony-content {
+  font-size: var(--small);
+}
+.non-scroll-footer {
+  position: fixed;
+  bottom: 20px;
+
+}
+/* страница 2 */
+
 /* footer */
 footer {
   margin-top: 80px;
@@ -361,6 +407,7 @@ footer {
   .black {
     transition: .3s;
     color: black;
+    position: fixed;
   }
   .header-img {
     width: 80px;
