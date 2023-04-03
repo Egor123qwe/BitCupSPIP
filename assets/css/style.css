@@ -14,6 +14,7 @@
 
   --Biggest: 64px;
 
+  --maxWidth: 1400px;
   --containerPadding: 120px;
 }
 
@@ -41,7 +42,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 1400px;
+  max-width: var(--maxWidth);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--containerPadding);
@@ -314,6 +315,19 @@ body {
   margin-top: 30px;
 }
 /* страница 2 */
+
+/* страница 3 */
+.registration-border {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(var(--maxWidth)/2);
+  border: 1px solid var(--main-green);
+  padding: 15px;
+}
+/* страница 3 */
 
 /* footer */
 footer {
