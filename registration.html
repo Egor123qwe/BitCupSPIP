@@ -27,7 +27,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="reg-main">
         <section class="registration">
             <div class="container">
                 <div class="registration-border">
@@ -35,25 +35,63 @@
                         <p>Регистрация участника</p>
                     </div>
                     <div class="registration-form">
-                        имя, фамилия ...
+                        <form action="#"> 
+                            <div class="reg-line">
+                                <div class="input-container">
+                                    <p>ФАМИЛИЯ</p>
+                                    <input type="text" name="surname" required placeholder="Фамилия">
+                                </div>
+                                <div class="input-container">
+                                    <p>ИМЯ</p>
+                                    <input type="text" name="name" required placeholder="Имя">
+                                </div>
+                            </div>
+                            <div class="reg-line">
+                                <div class="input-container">
+                                    <p>ОТЧЕСТВО</p>
+                                    <input type="text" name="patronymic" required placeholder="Отчество">
+                                </div>
+                                <div class="input-container">
+                                    <p>EMAIL</p>
+                                    <input type="email" name="email" required placeholder="email">
+                                </div>
+                            </div>
+                            <div class="reg-line">
+                                <div class="input-container">
+                                    <p>ТЕЛЕФОН</p>
+                                    <input type="text" name="telephone" required placeholder="Телефон">
+                                </div>
+                                <div class="input-container">
+                                    <p>Учебное заведение</p>
+                                    <input type="text" name="name" required placeholder="Учебное заведение">
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <p>Курс</p>
+                                <input type="text" name="Stage" required placeholder="1 КУРС">
+                            </div>
+                        </form>
                     </div>
                     <div class="contests">
                         <p class="contests-header">Конкурсы</p>
                         <div class="contests-content">
-                            data science ...
+                            <label><input type="checkbox" name="data_science">DATA SCIENCE</label>
+                            <label><input type="checkbox" name="dot_net">.NET</label>
+                            <label><input type="checkbox" name="soft_testing">SOFTWARE TESTING</label>
+                            <label><input type="checkbox" name="java">JAVA</label>
+                            <label><input type="checkbox" name="web_dev">WEB РАЗРАБОТКА</label>
+                            <label><input type="checkbox" name="php">ВЕБ ПРИЛОЖЕНИЯ НА PHP</label>
                         </div>
                     </div>
                     <div class="additionalInfo">
-                        <div class="additional-header">
-                            <p>Дополнительная информация</p>
-                        </div>
+                        <p>Дополнительная информация</p>
                         <div class="additional-text-border">
                             <div class="additional-text">
                                 Языки, технологии, хз что писать в этом плэйсхолдере
                             </div>
                         </div>
                     </div>
-                    <div class="send-form-btn">кнопочка)</div>
+                    <button type="submit" class="reg-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button> 
                 </div>
             </div>
         </section>            

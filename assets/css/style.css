@@ -8,14 +8,16 @@
   --small: 14px;
   --medium: 18px;
   --medium_2: 24px;
-
   --large: 42px;
   --Large_2: 48px; 
-
   --Biggest: 64px;
+
+  --Large_reg: 42px;
+  --medium_reg: 18px;
 
   --maxWidth: 1400px;
   --containerPadding: 120px;
+
 }
 
 /*global classes*/
@@ -38,6 +40,10 @@ body {
   font-size: var(--medium);
   color: var(--main-green);
   width: 100%;
+}
+
+.reg-main {
+  font-size: var(--medium_reg);
 }
 
 .container {
@@ -139,6 +145,8 @@ body {
   text-decoration: none;
   border: 1px solid var(--main-green);
   transition: all ease 0.5s;
+  background: none;
+  font-family: 'Chava';
 }
 /* конец секции 1 */
 
@@ -320,12 +328,61 @@ body {
 .registration-border {
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 300px;
   margin-left: auto;
   margin-right: auto;
   max-width: calc(var(--maxWidth)/2);
   border: 1px solid var(--main-green);
-  padding: 15px;
+  padding: 25px;
+}
+.registration-header p {
+  font-size: var(--Large_reg);
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form {
+  width: 100%;
+}
+.input-container p {
+  margin-bottom: 5px;
+}
+.reg-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.input-container input {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid var(--main-green);
+  margin: 5px 0;
+  background: none;
+}
+input::placeholder {
+  padding: 0;
+  margin: 0;
+  color: var(--dark-green);
+  font-family: 'Chava';
+  font-size: calc(var(--medium_reg)*0.8);
+}
+.additionalInfo p {
+  margin-bottom: 10px;
+}
+.additional-text-border {
+  padding: 5px;
+  border: 1px solid var(--main-green);
+  color: var(--dark-green);
+  word-spacing: 20px;
+  margin-bottom: 20px;
+}
+.contests-content input {
+  margin: 10px 5px 10px 0px;
+}
+
+.contests-content label {
+  font-size: calc(var(--medium_reg)*1.1);
+  white-space: nowrap;
+  margin-right: 15px;
 }
 /* страница 3 */
 
@@ -501,6 +558,9 @@ footer {
     --large: 20px;
     --Large_2: 26px; 
 
+    --Large_reg: 30px;
+    --medium_reg: 16px;
+
     --Biggest: 32px;
     --containerPadding: 20px;
   }
@@ -527,9 +587,14 @@ footer {
     padding-top: 0;
     margin-top: 0;
   }
-
+  .reg-line {
+    grid-template-columns: 1fr;
+  }
   .stages-conteiner {
     font-size: calc(var(--large)/1.2);
+  }
+  .registration-border {
+    padding: 10px;
   }
 
   .directions-item {
