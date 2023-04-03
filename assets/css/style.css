@@ -468,16 +468,6 @@ footer {
   .background-img {
     width: 30%;
   }
-  .qulix-body {
-    position: absolute;
-  }
-  .non-scroll-footer {
-    margin-top: 50px;
-    position: relative;
-  }
-  .qulix-container {
-    grid-template-columns: 1fr;
-  }
   .compony-content {
     font-size: var(--medium_2);
   }
@@ -534,7 +524,19 @@ footer {
     border-top: none;
     padding: 10px 5px 5px 5px;
   }
+  .header-comments {
+    display: none;
+  }
+  .header-label {
+    text-align: center;
+    width: 100%;
+  }
+  .header_label_text {
+    font-size: calc(var(--Biggest)*0.8);
+  }
   .direction-header {
+    width: 100%;
+    display: block;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: var(--small);
