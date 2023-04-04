@@ -392,7 +392,7 @@ input::placeholder {
 
 /* страница 4 */
 .winners-header-lable {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: var(--medium_2);
   margin-bottom: 10px;
 }
@@ -403,14 +403,19 @@ input::placeholder {
 .paginator span {
   border: 1px solid var(--main-green);
   padding: 5px;
+  transition: all ease 0.5s;
 }
+
 .win-table-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  grid-column-gap: 70px;
   margin-bottom: 100px;
 }
 .win-table-header {
   width: 530px;
+  margin-top: 30px;
 }
 table {
   border-collapse: collapse;
@@ -440,6 +445,11 @@ footer {
 
 /* анимации */
 .reg-btn:hover {
+  background: var(--main-green);
+  color: black;
+  transition: 0.7s;
+}
+.paginator span:hover {
   background: var(--main-green);
   color: black;
   transition: 0.7s;
@@ -529,6 +539,9 @@ footer {
   }
   .header-img {
     width: 80px;
+  }
+  .win-table {
+    width: 520px;
   }
 
   .about-content {
@@ -632,6 +645,17 @@ footer {
   .registration-border {
     padding: 10px;
   }
+  .winners-container {
+    width: 520px;
+  }
+  .winners .container {
+    overflow-x: auto;
+  }
+  .win-table-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 
   .directions-item {
     border: 1px solid black;
