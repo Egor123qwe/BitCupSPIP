@@ -201,7 +201,7 @@ body {
 }
 .header_label_text {
   white-space: nowrap;
-  font-size: var(--large);
+  font-size: var(--Large_2);
   margin-top: 30px;
 }
 .header-comments {
@@ -473,6 +473,7 @@ footer {
   }
   .header_label_text {
     margin-top: 20px;
+    font-size: var(--Large_2);
   }
   .directions-header { 
     height: 70px;
@@ -542,6 +543,9 @@ footer {
   }
   .win-table {
     width: 520px;
+  }
+  .header_label_text {
+    font-size: calc(var(--large)*0.9);
   }
 
   .about-content {
