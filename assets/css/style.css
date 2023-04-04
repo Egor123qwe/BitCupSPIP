@@ -2,6 +2,7 @@
 :root {
   --main-green: #2DAF58;
   --dark-green: #0F351B;
+  --main-red: #F40000;
 }
 
 :root { 
@@ -357,6 +358,9 @@ form {
   border: 1px solid var(--main-green);
   margin: 5px 0;
   background: none;
+  background-color: black;
+  font-family: 'Chava';
+  color: var(--main-green);
 }
 input::placeholder {
   padding: 0;
@@ -385,6 +389,38 @@ input::placeholder {
   margin-right: 15px;
 }
 /* страница 3 */
+
+/* страница 4 */
+.winners-header-lable {
+  margin-top: 50px;
+  font-size: var(--medium_2);
+  margin-bottom: 10px;
+}
+.paginator {
+  display: flex;
+  margin-bottom: 10px;
+}
+.paginator span {
+  border: 1px solid var(--main-green);
+  padding: 5px;
+}
+.win-table-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+.win-table-header {
+  width: 530px;
+}
+table {
+  border-collapse: collapse;
+}
+.win-table td {
+  border: 1px solid var(--main-green);
+  padding: 5px;
+  font-size: var(--small);
+}
+/* страница 4 */
 
 /* footer */
 footer {
