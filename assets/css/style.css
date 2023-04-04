@@ -278,6 +278,7 @@ body {
 }
 /* конец секции 4 */
 
+
 /* страница 2 */
 .compony-content a {
   color: var(--main-green);
@@ -344,6 +345,7 @@ body {
 form {
   width: 100%;
 }
+
 .input-container p {
   margin-bottom: 5px;
 }
