@@ -371,6 +371,33 @@ input::placeholder {
   font-family: 'Chava';
   font-size: calc(var(--medium_reg)*0.8);
 }
+
+label {
+  cursor: pointer;
+}
+label input[type="checkbox"] {
+  display: none;
+}
+label span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--main-green);
+  margin-right: 10px;
+}
+label input[type="checkbox"]:checked + span {
+  background-image: url(../img/checkbox-cube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px;
+  background-color: var(--main-green);
+}
+
+.contests-content label {
+  display:inline-block;
+  margin: 5px 15px 5px 0px;
+}
+
 .additionalInfo p {
   margin-bottom: 10px;
 }
@@ -380,15 +407,6 @@ input::placeholder {
   color: var(--dark-green);
   word-spacing: 20px;
   margin-bottom: 20px;
-}
-.contests-content input {
-  margin: 10px 5px 10px 0px;
-}
-
-.contests-content label {
-  font-size: calc(var(--medium_reg)*1.1);
-  white-space: nowrap;
-  margin-right: 15px;
 }
 /* страница 3 */
 
